@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Flexbox</title>
+    <link rel="icon" href="./assets/icona.png">
+    <link rel="stylesheet" href="./basis.css">
+</head>
+<body>
+
+    <div id="io1">
+        <h1>Spiegazione del layout Flexbox</h1>
+        <h2>Flex-basis</h2>
+        <p>Questa proprietà, viene usata insieme a quella precedentemente spiegata, ovvero la "flex-Grow". </p>
+        <p>La sua funzione è definire un limite di grandezza minimo, quindi l'elemnto applicatosi questa regola, non può diventare più piccolo della dimensione stabilita.</p>
+        <p>Il parametro di default è "<b>auto</b>", che significa che gli elementi all'interno del contenitore mantengono la loro dimensione naturale.</p>
+        <p>Mentre se specifichiamo un paramentro , gli elementi acquisiranno, quel valore come nuova lunghezza di base.</p>
+        <p>Per illustrare questo concetto, osserviamo l'esempio preso in considerazione per il flex Grow:</p>
+    </div>
+
+    
+    <div id="esempio2">
+        <button class="b1">1</button>
+        <button class="b2">2</button>
+        <button class="b3">3</button>
+        <button class="b4">4</button>
+    </div>
+
+    <br>
+
+    <div id="io3">
+        <p>L'unica modifica apportata in questo esempio è l'applicazione di questa proprietà.</p>
+        <img class="img" src="./assets/flexbasis.PNG" alt="immagine del codice">
+        <p>In questo caso, applicando il 40% di dimensione base, l'elemento non si rimpicciolirà più della dimensione stabilita.</p>
+    </div>
+
+    <div id="io1">
+        <h2>Tips</h2>
+    </div>
+
+    <div id="io2">
+        <p>Attraverso la proprietà "flex", possiamo utilizzare i tag flex-Grow,flex-shrink e flex-basis contemporaneamente, attraverso questa proprietà.</p>
+        <p>Esempio:</p>
+        <img class="img" src="./assets/flex-gsb.PNG" alt="immagine del codice">
+        <p>Il primo parametro indica il flex-Grow.</p>
+        <p>Gli ultimi due parametri sono opzionali, questi controllano, in ordine flex-shrink e flex-basis.</p>
+        <p>Se non impostato un parametro verrano automaticamente impostati a "0".</p>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="ionav">
+        <a id="sk-sx" href="./index"><img id="sk-sx" src="./assets/skip-sx.png" alt="torna alla pagina 1"></a>
+        <a id="sx1" href="./flex2.html"><img id="sx1" src="./assets/sinistra.png" alt="pagina precedente"></a>
+        <p>4</p>
+        <a id="dx1" href="./justify.html"><img id="dx1" src="./assets/destra.png" alt="pagina successiva"></a>
+        <a id="sk-dx" href="./gap.html"><img id="sk-dx" src="./assets/skip-dx.png" alt="vai all'ultima pagina"></a>
+    </div>
+
+</body>
+</html>

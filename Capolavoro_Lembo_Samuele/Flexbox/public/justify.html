@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Flexbox</title>
+    <link rel="icon" href="./assets/icona.png">
+    <link rel="stylesheet" href="./justify.css">
+</head>
+</head>
+<body>
+
+    <div id="io1">
+        <h1>Spiegazione del layout Flexbox</h1>
+        <h2>Justify-Content</h2>
+        <p>In modo semplice, questa proprietà consente di allineare gli elementi all'interno del contenitore lungo l'asse orizzontale.</p>
+        <p>Per questa proprietà abbiamo molteplici parametri che possiamo assegnare.</p>
+        <p>Ecco qui una lista di quelli più importanti: </p>
+    </div>
+
+        <br>
+
+        <div id="lista">
+
+            <div id="io3">
+                <h2>Flex-Start</h2>
+                <p>Gli elementi vengono disposti in modo da adattarsi all'inizio del contenitore.</p>
+                <p>Esempio:</p>
+                <div id="esempio">
+                    <button class="b1">1</button>
+                    <button class="b2">2</button>
+                    <button class="b3">3</button>
+                </div>
+                <img class="img" src="./assets/flexstart.PNG" alt="immagine codice">
+            </div>
+
+            <br>
+
+            <div id="io3">
+                <h2>Flex-End</h2>
+                <p>Gli elementi vengono disposti in modo da adattarsi alla fine del contenitore.</p>
+                <p>Esempio:</p>
+                <div id="esempio1">
+                    <button class="b1">1</button>
+                    <button class="b2">2</button>
+                    <button class="b3">3</button>
+                </div>
+                <img class="img" src="./assets/flexend.PNG" alt="immagine codice">
+            </div>
+
+            <br>
+
+            <div id="io3">
+                <h2>Center</h2>
+                <p>Gli elementi vengono disposti in modo da adattarsi al centro del contenitore.</p>
+                <p>Esempio:</p>
+                <div id="esempio2">
+                    <button class="b1">1</button>
+                    <button class="b2">2</button>
+                    <button class="b3">3</button>
+                </div>
+                <img class="img" src="./assets/flexcenter.PNG" alt="immagine codice">
+            </div>
+
+            <br>
+
+            <div id="io3">
+                <h2>Space-Between</h2>
+                <p>Gli elementi vengono disposti in modo che lo spazio fra di essi sia uguale.</p>
+                <p>Esempio:</p>
+                <div id="esempio3">
+                    <button class="b1">1</button>
+                    <button class="b2">2</button>
+                    <button class="b3">3</button>
+                    <button class="b4">4</button>
+                </div>
+                <img class="img" src="./assets/between1.PNG" alt="immagine codice">
+            </div>
+
+            <br>
+
+            <div id="io3">
+                <h2>Space-Around</h2>
+                <p>Gli elementi vengono disposti in modo che la quantità di spazio tra e attorno a loro sia equamente distribuito.</p>
+                <p>Esempio:</p>
+                <div id="esempio4">
+                    <button class="b1">1</button>
+                    <button class="b2">2</button>
+                    <button class="b3">3</button>
+                    <button class="b4">4</button>
+                </div>
+                <img class="img" src="./assets/around1.PNG" alt="immagine codice">
+            </div>
+
+            <br>
+
+            <div id="io3">
+                <h2>Space-Evenly</h2>
+                <p>Gli elementi vengono disposti in modo che soltanto lo spazio fra gli elementi sia equamente distribuito.</p>
+                <p>Esempio:</p> 
+                <div id="esempio5">
+                    <button class="b1">1</button>
+                    <button class="b2">2</button>
+                    <button class="b3">3</button>
+                    <button class="b4">4</button>
+                </div>
+                <img class="img" src="./assets/evenly.PNG" alt="immagine codice">
+            </div>
+
+
+
+        </div>
+
+        <br>
+        <br>
+
+        <div id="io1">
+            <h2>Tips</h2>
+        </div>
+        <div id="io2">
+            <ul>
+                <li> <p>Tutte questi parametri hanno effetto soltanto sull'asse orizzontale del contenitore.</p> </li>
+                <li>
+                    <p>Oltre ai parametri: flex-start&flex-end, abbiamo start&end.</p>
+                    <p>Questi possono agire su contenitore che hanno un tipo di layout che può essere diverso dal flexbox.</p>
+                    <p>Per esempio possono essere usati su contenitore che hanno un tipo di layout inline o block, o ancora table,etc..</p>
+                </li>
+                <li>
+                    <p>Un altro tipo di parametro che non ho inserito tra gli esempi sono quelli direzionali ovvero: right&left.</p>
+                    <p>Questi spostano il contenuto nel bordo destro o sinistro del contenitore.</p>
+                    <p>A meno che, nel contenitore non sia inserita la proprietà flex-direction, sè così i parametri agiranno come start&end.</p>
+                </li>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+
+    <div id="ionav">
+        <a id="sk-sx" href="./index"><img id="sk-sx" src="./assets/skip-sx.png" alt="torna alla pagina 1"></a>
+        <a id="sx1" href="./basis.html"><img id="sx1" src="./assets/sinistra.png" alt="pagina precedente"></a>
+        <p>5</p>
+        <a id="dx1" href="./align-c.html"><img id="dx1" src="./assets/destra.png" alt="pagina successiva"></a>
+        <a id="sk-dx" href="./gap.html"><img id="sk-dx" src="./assets/skip-dx.png" alt="vai all'ultima pagina"></a>
+    </div>
+
+</body>
+</html>
