@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sami-News</title>
+<link rel="icon" href="./Scity2.jpg">
+<link rel="stylesheet" href="./Home.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Jacquard+24&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Jacquard+24&family=Oldenburg&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+
+    <div id="spacecity">
+
+        <div id="white"></div>
+        <img src="./first1.png" alt="imn" id="first1" class="city">
+        <img src="./first2.png" alt="imn" id="first2" class="city">
+        <img src="./first3.png" alt="imn" id="first3" class="city">
+        <div id="black" class="city"></div>
+
+    </div>
+
+    <script>
+        let f1 = document.getElementById("first1")
+        let f2 = document.getElementById("first2")
+        let f3 = document.getElementById("first3")
+        let b = document.getElementById("black");
+
+        window.addEventListener("scroll", function () {
+            let value = window.scrollY;
+            f1.style.top = -value * 0.05 + 'px';
+            f2.style.top = value * 0.20 + 'px';
+            f3.style.top = value * 0.30 + 'px';
+        })
+    </script>
+
+
+    <div id="Pagina">
+
+        <div id="intro">
+            <h1>SAMI-NEWS</h1>
+            <h2>Benvenuti Nelle Sami-news settimanali!</h2>
+            <p>Continuate a scorrere per vedere L'app della settimana o la nuove scoperte di Sami!</p>
+        </div>
+
+        <div class="pad">
+
+        </div>
+
+        <div id="app">
+
+            <div id="tit">
+                <h1>Sami-App della settimana</h1>
+                <h2>L'app della settimana di Sami è: <p id="AppT">Tor Browser</p> </h2>
+            </div>
+            <div id="alt">            
+                <img src="./app.png" alt="app" id="imga" >
+                <p id="desc">
+                    
+                    Tor è un browser web progettato per fornire una navigazione sicura e privata. Si concentra sulla protezione della privacy dell'utente, offrendo funzionalità come il blocco di tracker, annunci pubblicitari e altre forme di tracciamento online. Tor è noto per la sua interfaccia semplice e intuitiva, che facilita la navigazione senza compromettere la sicurezza. Inoltre, offre funzionalità di personalizzazione e integrazione con servizi di gestione delle password e VPN per un'esperienza di navigazione ancora più sicura e privata.
+
+                </p>
+            </div>
+
+        </div>
+
+        <div class="pad">
+            
+        </div>
+
+        <div id="Scoperta">
+            <h1> Grazie della Visione!</h1>
+            <a href="http://localhost:8008" id="capolavoro">Torna alla pagina del capolavoro</a>
+        </div>
+        
+        <div class="pad">
+            
+        </div>
+
+        <footer>
+            <p>Copyright © 2020 Sami-Corp</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
