@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  background: linear-gradient(240deg, #7b4397, #dc2455, #693784, #514a9d);
+  background-size: 200% 200%;
+  animation: gradient 20s ease infinite;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#title{
+  color: darkred;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 120px;
+  text-align: center;
+}
+ 
+p{
+  font-family: "Oldenburg", serif;
+  font-weight: 400;
+  font-size: 23px;
+  font-style: normal;
+  color: black;
+  text-align: center;
+}
+
+h2{
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.link{
+  border: solid black 10px;
+  background: linear-gradient(65deg ,red,blue,green,yellow);
+  background-size: 100% 100%;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  margin: 5px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.link:hover{
+  transform:rotate(360deg) scale(1.5); 
+  transition: 2s;
+}
+
+
+#sotDesc{
+  text-align: center;
+}
+
+#links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: 20px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  25% {
+      background-position: 50% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  75% {
+      background-position: 50% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
