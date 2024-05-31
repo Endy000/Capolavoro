@@ -1,0 +1,71 @@
+#nome{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#descr{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#bio{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 50;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a{
+    margin: 10px;
+    color: blueviolet;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #444;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+table th {
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-right: 2px solid #444;
+}
+
+table td {
+    border: 2px solid #444;
+    border-collapse: collapse;
+    color: #444;
+    padding: 20px;
+    border-right: 2px solid #444;
+}
+
+table tr:last-child td {
+    border-bottom: 2px solid #444;
+}
+
+table td:last-child {
+    border-right: none;
+}

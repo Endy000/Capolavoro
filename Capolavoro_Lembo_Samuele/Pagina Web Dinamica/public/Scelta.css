@@ -1,0 +1,80 @@
+body{
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+    width: 90vw;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenitore img{
+    width: 200px;
+    height: 200px;
+    border-radius: 300px;
+    border: 15px double black;
+}
+
+#nome{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 50px;
+}
+
+#descr{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#img{
+    width: 250px;
+    height: 250px;
+}
+
+.contenitore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 350px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.contenitore:hover {
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    transform: scale(1.1);
+}
+
+#capolavoro{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: underline;
+    color: black;
+}

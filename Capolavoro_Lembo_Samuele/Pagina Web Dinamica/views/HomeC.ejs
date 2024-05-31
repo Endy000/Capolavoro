@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./HomeC.css">
+    <link rel="icon" href="./photo/icona.png">
+    <title>Pagina Web Dinamica</title>
+    <style>
+        body {
+            margin: 10px;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <% dati_calciatore.forEach( calciatore => { %>
+        <h1 id="nome"><%= calciatore.nome %></h1>
+        <hr>
+        <p id="descr"><%= calciatore.descr %></p>
+    
+        <img src="<%= calciatore.foto %>" alt="foto calciatore" id="img">
+
+        <div id="indice">
+            <h2>Indice</h2>
+            <ol>
+                <li><a href="./">Biografia</a></li>
+                <li><a href="./">Caratteristiche tecniche</a></li>
+            </ol>
+        </div>
+
+        <div id="Biografia">
+            <h2>Biografia</h2>
+            <p id="bio">
+                <%= calciatore.bio %>
+            </p>
+        </div>
+
+        <div id="Car">
+            <h2>Caratteristiche tecniche</h2>
+            <table>
+                <tr>
+                    <th>Abilità</th>
+                    <th>Dettaglio</th>
+                </tr>
+                <tr>
+                    <td>Caratteristiche fisiche</td>
+                    <td id="car">
+                        <%= calciatore.car %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bagaglio tecnico</td>
+                    <td id="bag">
+                        <%= calciatore.bag %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>altre abilità</td>
+                    <td id="ab">
+                        <%= calciatore.ab %>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    <% }) %>
+    <!-- tag script fisso parte inferiore della pagina -->
+    <script src="/js/homecScript.js"></script>
+</body>
+
+</html>

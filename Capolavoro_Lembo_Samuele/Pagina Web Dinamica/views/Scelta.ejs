@@ -1,0 +1,38 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Scelta.css">
+        <link rel="icon" href="./photo/icona.png">
+        <title>Pagina Web Dinamica</title>
+        <style>
+            body {
+                margin: 10px;
+                padding: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Pagina Web Dinamica</h1>
+        <h2>Scegli il giocatore!</h2>
+        <a href="http://localhost:8008" id="capolavoro">oppure torna alla pagina del capolavoro</a>
+    <div id="container">    
+        <% calciatori.forEach((calciatore) => { %>
+            <a href="/HomeC?calciatore=<%= calciatore.id %>">
+                <div class="contenitore">
+                    <h1 id="Nome"><%= calciatore.nome %></h1>
+                    <img src="<%= calciatore.foto %>" alt="Immagine" class="Immagine">
+                    <p id="desc"><%= calciatore.descr %></p>
+                </div>
+            </a>
+        <% }); %>
+    </div>
+
+    <script src="/js/homecScript.js"></script>
+
+    </body>
+
+    </html>
