@@ -1,0 +1,177 @@
+html{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(219, 255, 255);
+}
+
+#io1 h1{
+    text-align: center;
+    color: royalblue;
+    background-color: lightblue;
+    display: table;
+    margin: 0 auto;
+    padding: 10px;
+    border: 0;
+    border-radius: 2px;
+}
+
+#io1 h2{
+    color: royalblue;
+}
+
+#io1 p{
+    background-color: lightblue;
+    display: table;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#ionav{ 
+    position: absolute;
+    display: flex;
+    background-color: lightskyblue;
+    padding: 10px;
+    height: 30px;  
+    margin: 0px;
+    left: 50%; 
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+#ionav p {
+    font-size: 30px;
+    margin: 5px;
+}
+
+#ionav #sx1, #ionav #dx1, #ionav #sk-sx, #ionav #sk-dx {
+    width: 50px;  
+  }  
+
+.img{
+    border-radius: 5%;
+    border: groove 10px peru;
+}
+
+#esempio{
+    background-color: rgba(14, 13, 13, 0.932);
+    padding: 50px;
+    display: flex;
+    margin: 10px;
+    width: 80%;
+    flex-wrap:wrap;
+    border: ridge 10px burlywood;
+    border-radius: 2%;
+}
+
+#esempio .b1{
+    background-attachment:fixed;
+    background-color: lightskyblue;
+    padding: 70px;
+    margin: 5px;
+}
+
+#esempio .b2{
+    background-attachment:fixed;
+    background-color: green;
+    padding: 70px;
+    margin: 5px;
+}
+
+#esempio .b3{
+    background-attachment:fixed;
+    background-color: yellowgreen;
+    padding: 70px;
+    margin: 5px;
+}
+
+#esempio .b4{
+    background-attachment:fixed;
+    background-color: yellow;
+    padding: 70px;
+    margin: 5px;
+}
+
+#esempio .b5{
+    background-attachment:fixed;
+    background-color: orange;
+    padding: 70px;
+    margin: 5px;
+}
+
+#esempio .b6{
+    background-attachment:fixed;
+    background-color: red;
+    padding: 70px;
+    margin: 5px;
+}
+
+#esempio2{
+    background-color: rgba(14, 13, 13, 0.932);
+    padding: 80px;
+    display: flex;
+    margin: 10px;
+    width: 40%;
+    flex-flow: column wrap;
+    border: ridge 10px burlywood;
+    border-radius: 2%;
+}
+
+#esempio2 .b1{
+    background-attachment:fixed;
+    background-color: lightskyblue;
+    padding: 70px;
+    margin: 5px;
+}
+
+#esempio2 .b2{
+    background-attachment:fixed;
+    background-color: green;
+    padding: 70px;
+    margin: 5px;
+}
+
+#esempio2 .b3{
+    background-attachment:fixed;
+    background-color: yellowgreen;
+    padding: 70px;
+    margin: 5px;
+}
+
+#esempio2 .b4{
+    background-attachment:fixed;
+    background-color: yellow;
+    padding: 70px;
+    margin: 5px;
+}
+
+#esempio2 .b5{
+    background-attachment:fixed;
+    background-color: orange;
+    padding: 70px;
+    margin: 5px;
+}
+
+#esempio2 .b6{
+    background-attachment:fixed;
+    background-color: red;
+    padding: 70px;
+    margin: 5px;
+}
+
+#io3{
+    background-color: rgb(82, 167, 196);
+    display: table;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
