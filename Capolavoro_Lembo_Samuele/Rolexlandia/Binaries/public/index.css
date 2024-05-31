@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body{
+    background-color: bisque;
+    margin: 0;
+}
+
+header{
+display: flex;
+background-color: rgb(8, 33, 58);
+padding: 20px;
+padding-bottom: 0px;
+border: 3px solid black;
+box-shadow: 5px 5px 10px;
+border-bottom: 0px;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: bisque;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+
+h1{
+    color: goldenrod;
+    text-shadow: 1px 1px 2px rgba(218, 185, 0, 0.5);  
+    font-family: 'Dancing Script', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+#RolexLandia_logo{
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
+}
+
+#links{
+    display: inline-flex;
+    position: relative;
+    padding: 5px;
+    margin-left: auto;
+}
+
+.link {
+    margin-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: bisque;
+    text-decoration: none;
+    font-family:system-ui;
+}
+
+#navi{
+    max-width: fit-content;
+    padding: 30px;
+    display: flex;
+    background-color: beige;
+    width: 80%;
+    height: calc(100vh - 224px);
+    margin: 10px;
+    border: bisque solid 2px;
+    border-radius: 50px;
+    text-align: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    margin-top: 5px;
+}
+
+.link2{
+    color: brown;
+    text-decoration: none;
+    font-family:Georgia;
+}
+
+#Spazio{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 10px;
+    margin-left: 0;
+    overflow: auto;
+    height: calc(100vh - 140px);
+
+}
+
+.spazio{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    margin-left: 0;
+    overflow: auto;
+    height: calc(100vh - 160px);
+}
+
+.orologio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    background-color: beige;
+    border-radius: 50px;
+    border: bisque solid 2px;
+    height: 300px;
+    width: 300px;
+    padding: 60px;
+}
+
+.orologio img{
+    object-fit: cover;
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.orologio #h1{
+    border-bottom-width: 2px;
+}
+
+#add{
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    width: 2%;
+    height: 2%;
+    position:absolute;
+    bottom: 2vh;
+    right: 1vh;
+    background-color: goldenrod;
+    border-radius: 40px;
+    border:2px solid gold;
+    transition: 0.5s, black;
+    cursor: pointer;
+}
+
+#add:hover{transform: scale(1.2); background-color:rgb(255, 201, 65);}
+
+fieldset {
+    border: 2px solid gold;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(8, 33, 58);
+    padding: 0 10px;
+    background-color: goldenrod;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+fieldset input[type="radio"] {
+    margin-right: 5px;
+}
+fieldset input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: rgb(255, 201, 65); 
+}
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: gold;
+    border-radius: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: goldenrod;
+    border-radius: 10px;
+  }
+
+#cerca{
+    margin-top: 20px;
+    padding: 20px 60px;
+    background-color: goldenrod;
+    border-radius: 40px;
+    border:2px solid gold;
+    transition: 0.5s, black;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(8, 33, 58);
+    cursor: pointer;
+}
+
+#cerca:hover{transform: scale(1.2); background-color:rgb(255, 201, 65);}
+
+ label{
+    font-size: 120em;
+    font-weight: bold;
+    color: rgb(8, 33, 58);
+    font-size: 1em;
+    font-weight: bold;
+}
