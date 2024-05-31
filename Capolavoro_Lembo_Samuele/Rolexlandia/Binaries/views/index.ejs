@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" href="./Assets/Redist/OIG3.x.jfif" id="Icon">
+    <title>RolexLandia</title>
+</head>
+
+<body>
+    <header>
+        <a href="">
+            <h1>RolexLandia</h1>
+        </a>
+        <div id="img1">
+            <img src="./Assets/Redist/icons8-fiaba-50.png" alt="logo" id="RolexLandia_logo">
+        </div>
+
+        <% if(utente){ %>
+            <p>Benvenuto <%= utente %>!</p>
+            <% } %>
+
+
+                <div id="links">
+                    <a href="http://localhost:8008" id="l1" class="link">Torna alla pagina del Capolavoro</a>
+                    <% if(utente){ %>
+                        <a href="/login/out" class="link">Logout</a>
+                    <% } else{ %>
+                        <a href="login" id="l4" class="link">Login</a>
+                        <a href="register" id="l5" class="link">Registrati</a>
+                    <% } %>
+                </div>
+    </header>
+
+    <div id="Spazio">
+
+        <nav id="navi">
+            <form action="/" method="post">
+                <!-- Tipologia -->
+                <fieldset>
+                    <legend>Tipologia</legend>
+                    <input type="checkbox" name="tipologia[]" value="Subacqueo" class="checkbox" id="subacqueo"> <label
+                        for="subacqueo">Subacqueo</label><br>
+                    <input type="checkbox" name="tipologia[]" value="Cronografo" class="checkbox" id="cronografo">
+                    <label for="cronografo">Cronografo</label><br>
+                    <input type="checkbox" name="tipologia[]" value="Classico" class="checkbox" id="classico"> <label
+                        for="classico">Classico</label><br>
+                    <input type="checkbox" name="tipologia[]" value="Automatico" class="checkbox" id="automatico">
+                    <label for="automatico">Automatico</label><br>
+                    <input type="checkbox" name="tipologia[]" value="Quarzo" class="checkbox" id="quarzo"> <label
+                        for="quarzo">Quarzo</label><br>
+                </fieldset>
+
+                <!-- Materiale -->
+                <fieldset>
+                    <legend>Materiale</legend>
+                    <input type="checkbox" name="materiale[]" value="Acciaio" class="checkbox" id="acciaio"> <label
+                        for="acciaio">Acciaio</label><br>
+                    <input type="checkbox" name="materiale[]" value="Oro" class="checkbox" id="oro"> <label
+                        for="oro">Oro</label><br>
+                    <input type="checkbox" name="materiale[]" value="Oro rosa" class="checkbox" id="oro_rosa"> <label
+                        for="oro_rosa">Oro rosa</label><br>
+                    <input type="checkbox" name="materiale[]" value="Ceramica" class="checkbox" id="ceramica"> <label
+                        for="ceramica">Ceramica</label><br>
+                    <input type="checkbox" name="materiale[]" value="Plastica" class="checkbox" id="plastica"> <label
+                        for="plastica">Plastica</label><br>
+                </fieldset>
+
+                <!-- Stile -->
+                <fieldset>
+                    <legend>Stile</legend>
+                    <input type="checkbox" name="stile[]" value="Sportivo" class="checkbox" id="sportivo"> <label
+                        for="sportivo">Sportivo</label><br>
+                    <input type="checkbox" name="stile[]" value="Elegante" class="checkbox" id="elegante"> <label
+                        for="elegante">Elegante</label><br>
+                    <input type="checkbox" name="stile[]" value="Casual" class="checkbox" id="casual"> <label
+                        for="casual">Casual</label><br>
+                </fieldset>
+
+                <!-- Marca -->
+                <fieldset>
+                    <legend>Marche Rinomate</legend>
+                    <input type="checkbox" name="marca[]" value="Omega" class="checkbox" id="omega"> <label
+                        for="omega">Omega</label><br>
+                    <input type="checkbox" name="marca[]" value="Rolex" class="checkbox" id="rolex"> <label
+                        for="rolex">Rolex</label><br>
+                    <input type="checkbox" name="marca[]" value="Seiko" class="checkbox" id="seiko"> <label
+                        for="seiko">Seiko</label><br>
+                    <input type="checkbox" name="marca[]" value="Citizen" class="checkbox" id="citizen"> <label
+                        for="citizen">Citizen</label><br>
+                    <input type="checkbox" name="marca[]" value="Hamilton" class="checkbox" id="hamilton"> <label
+                        for="hamilton">Hamilton</label><br>
+                    <input type="checkbox" name="marca[]" value="Swatch" class="checkbox" id="swatch"> <label
+                        for="swatch">Swatch</label><br>
+                    <input type="checkbox" name="marca[]" value="Casio" class="checkbox" id="casio"> <label
+                        for="casio">Casio</label><br>
+                </fieldset>
+
+                <input type="submit" value="Cerca" id="cerca">
+
+            </form>
+        </nav>
+
+        <div class="spazio">
+            <% orologi.forEach((orologio)=>{ %>
+                <div class="orologio">
+                    <h1 id="Nome">
+                        <%= orologio.Nome %>
+                    </h1>
+                    <img src=" <%= orologio.img%> " alt="Img" id="Immagine">
+                    <p id="desc">
+                        <%= orologio.Descrizione %>
+                    </p>
+                    <p id="price">
+                        <%= orologio.prezzo %> €
+                    </p>
+                </div>
+
+                <% }) %>
+        </div>
+
+        <button id="add">+</button>
+
+    </div>
+
+</body>
+
+</html>
