@@ -4,12 +4,29 @@
     {
       "src": "app.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "Flexbox/server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "Pagina Web Dinamica/server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "Rolexlandia/Binaries/server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "Sami_News/server.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/app.js"
-    }
+    { "src": "/flexbox", "dest": "/Flexbox/server.js" },
+    { "src": "/pagina-web-dinamica", "dest": "/Pagina Web Dinamica/server.js" },
+    { "src": "/rolexlandia", "dest": "/Rolexlandia/Binaries/server.js" },
+    { "src": "/sami-news", "dest": "/Sami_News/server.js" },
+    { "src": "/", "dest": "/app.js" }
   ]
 }
