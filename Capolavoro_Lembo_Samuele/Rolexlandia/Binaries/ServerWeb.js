@@ -1,15 +1,17 @@
-const mysql = require("mysql")
 const express = require("express")
 const bp = require("body-parser")
 const ejs = require("ejs")
+const path = require("path")
 const session = require('express-session')
 const conn = require('./utils/connectionDB')
 
 const app = express()
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.static('./public'))
-app.set("view engine", "ejs")
+app.use(bp.urlencoded({ extended: true }));
+app.use(bp.json());
+app.use(express.static(path.join(__dirname, 'public')));
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 app.use(session({
     secret: "chiave",
     resave: false,
@@ -48,7 +50,7 @@ app.get("/", (req, res) => {
 
                 res.render('no_results', { utente: req.session.nome });
             } else {
-                res.render('index', { orologi: resp, utente: req.session.nome });
+                res.render('indexr', { orologi: resp, utente: req.session.nome });
             }
         }
     });
@@ -56,7 +58,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-
+    console.log(req.body)
     let sql = "SELECT * FROM orologi WHERE 1=1 ";
 
     const { tipologia, materiale, stile, marca } = req.body;
@@ -94,16 +96,12 @@ app.post("/", (req, res) => {
             res.status(500).send("Errore nel recupero degli orologi");
         } 
         else {
-                res.render('index', { orologi: resp, utente: req.session.nome });
-            }
+            res.render('indexr', { orologi: resp, utente: req.session.nome });
+        }
     });
 })
 
-app.get("/", (req, res) => {
-    conn.query("SELECT * FROM orologi", (err, resp) => {
-        res.render('index', { orologi: resp, utente: req.session.nome })
-    })
-})
-
-app.listen(4600)
-console.log("Server in ascolto sulla porta 4600")
+const PORT = process.env.PORT || 4600;
+app.listen(PORT, () => {
+    console.log(`Rolexlandia in ascolto sulla porta ${PORT}`);
+});
