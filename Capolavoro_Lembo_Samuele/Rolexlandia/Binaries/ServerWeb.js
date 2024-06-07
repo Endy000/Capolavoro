@@ -50,7 +50,7 @@ app.get("/", (req, res) => {
 
                 res.render('no_results', { utente: req.session.nome });
             } else {
-                res.render('indexr', { orologi: resp, utente: req.session.nome });
+                res.render('index', { orologi: resp, utente: req.session.nome });
             }
         }
     });
@@ -96,7 +96,7 @@ app.post("/", (req, res) => {
             res.status(500).send("Errore nel recupero degli orologi");
         } 
         else {
-            res.render('indexr', { orologi: resp, utente: req.session.nome });
+            res.render('index', { orologi: resp, utente: req.session.nome });
         }
     });
 })
