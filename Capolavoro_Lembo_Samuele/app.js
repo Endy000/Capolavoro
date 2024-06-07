@@ -1,34 +1,27 @@
-// dichiarazione librerie
-const express = require ("express")
-const ejs = require ("ejs")
-const path = require ("path")
+const express = require("express");
+const ejs = require("ejs");
+const path = require("path");
 const { exec } = require('child_process');
-//instanziamento applicazione
-const app = express()
 
-
-// dichiarazione file statici
+const app = express();
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('./public'))
-app.use(express.static('./Flexbox'))
-app.set("view engine", "ejs")
+app.use(express.static('./public'));
+app.use(express.static('./Flexbox'));
+app.set("view engine", "ejs");
 
-//restituisce la homepage
 app.get("/", function(req, res) {
     res.render(path.join(__dirname + "/views", "index.ejs"));
-})
+});
 
-
-// Avvio delle app nelle sottocartelle
 const apps = [
-  { name: 'Flexbox', path: './Flexbox/server.js' },
-  { name: 'Pagina Web Dinamica', path: '"./Pagina Web Dinamica/server.js"' },
-  { name: 'Rolexlandia', path: './Rolexlandia/Binaries/ServerWeb.js' },
-  { name: 'Sami_News', path: './Sami_News/server.js' }
+  { name: 'Flexbox', port: 4601, path: './Flexbox/server.js' },
+  { name: 'Pagina Web Dinamica', port: 4602, path: '"./Pagina Web Dinamica/server.js"'},
+  { name: 'Rolexlandia', port: 4600, path: './Rolexlandia/Binaries/ServerWeb.js' },
+  { name: 'Sami_News', port: 4603, path: './Sami_News/server.js' }
 ];
 
 apps.forEach(appInfo => {
-  exec(`node ${appInfo.path}`, (err, stdout, stderr) => {
+  exec(`node ${appInfo.path}`, { env: { PORT: appInfo.port } }, (err, stdout, stderr) => {
     if (err) {
       console.error(`Errore nell'avvio di ${appInfo.name}:`, err);
       return;
@@ -37,6 +30,5 @@ apps.forEach(appInfo => {
   });
 });
 
-//mette l'app in ascolto
-app.listen(8008)
-console.log("server in ascolto sulla 8008")
+console.log("server in ascolto sulla 8008");
+app.listen(8008);
